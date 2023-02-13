@@ -21,7 +21,7 @@
 }
 
 .card {
-  width: 258px;
+  width: 255px;
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
@@ -58,4 +58,25 @@
 
 .error-message {
   text-align: center;
+}
+
+/* About Page */
+.about-section {
+  text-align: center;
+}
+
+/* Contact Page */
+.contact-page {
+  text-align: center;
+}
+
+/* Restaurant Menu Page */
+.menu {
+  display: flex;
+}
+
+.res-list {
+  width: 255px;
+  padding: 10px;
+  margin: 10px;
 }

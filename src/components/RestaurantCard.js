@@ -6,7 +6,7 @@ const RestaurantCard = ({
   cuisines,
   cloudinaryImageId,
   avgRating,
-  slaString,
+  costForTwoString
 }) => {
   return (
     <div className="card">
@@ -15,7 +15,7 @@ const RestaurantCard = ({
       <h3>{cuisines.join(", ")}</h3>
       <div>
         <h4>{avgRating} stars</h4>
-        <h4>{slaString}</h4>
+        <h4>{costForTwoString}</h4>
       </div>
     </div>
   );

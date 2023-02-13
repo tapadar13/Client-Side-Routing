@@ -1,6 +1,7 @@
 import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [restaurants, setRestaurants] = useState(restaurantList);
@@ -9,7 +10,13 @@ const Home = () => {
       <div className="restaurant-list">
         {restaurants.map((restaurant) => {
           return (
-            <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
+            <Link
+              to={"/restaurant/" + restaurant.data.id}
+              style={{ textDecoration: "none" }}
+              key={restaurant.data.id}
+            >
+              <RestaurantCard {...restaurant.data} />
+            </Link>
           );
         })}
       </div>
