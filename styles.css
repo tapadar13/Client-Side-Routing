@@ -73,6 +73,7 @@
 /* Restaurant Menu Page */
 .menu {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .res-list {
